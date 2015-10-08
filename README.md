@@ -1,0 +1,44 @@
+# ZHScrollView
+###banner for IOS
+
+
+###图片轮播 Banner
+1、使用简单
+2、实现了定时轮播功能，可自定义各项功能
+3、实现了点击效果
+
+###如何使用ZHScrollView
+
+
+1、手动导入
+2、将项目文件夹中的ZHScrollView文件夹加入到项目中
+
+###使用方法
+```objective-c
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    ZHScrollView *testView = [[ZHScrollView alloc] initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, 200)];
+    NSArray *imageArray = @[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg"];
+    testView.slideImagesArray = imageArray;
+    testView.ianEcrollViewSelectAction = ^(NSInteger i)
+    {
+         NSLog(@"点击了%ld张图片",(long)i);
+    };
+    
+    testView.ianCurrentIndex = ^(NSInteger index){
+        NSLog(@"测试一下：%ld",(long)index);
+    };
+    
+    [testView starLoading];
+    [self.view addSubview:testView];
+}
+```
+具体使用参考demo
+
+##提醒
+工程的创建使用了Xcode7版本
+
+##期望
+如果在使用过程中遇到BUG，希望你能联系我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
+如果在使用过程中发现功能不够用，希望你能联系我，我非常想为这个控件增加更多好用的功能，谢谢
