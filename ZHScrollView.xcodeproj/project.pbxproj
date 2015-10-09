@@ -101,6 +101,7 @@
 		F914B19A1BBBB4590055386E /* ZHScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				F9AC7C251BC74B2600632981 /* ZHScrollView */,
 				F914B19E1BBBB4590055386E /* AppDelegate.h */,
 				F914B19F1BBBB4590055386E /* AppDelegate.m */,
 				F914B1A11BBBB4590055386E /* ViewController.h */,
@@ -138,6 +139,13 @@
 				F914B1C21BBBB4590055386E /* Info.plist */,
 			);
 			path = ZHScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		F9AC7C251BC74B2600632981 /* ZHScrollView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZHScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,6 +509,7 @@
 				F914B1C71BBBB4590055386E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F914B1C81BBBB4590055386E /* Build configuration list for PBXNativeTarget "ZHScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +518,7 @@
 				F914B1CA1BBBB4590055386E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F914B1CB1BBBB4590055386E /* Build configuration list for PBXNativeTarget "ZHScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +527,7 @@
 				F914B1CD1BBBB4590055386E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
