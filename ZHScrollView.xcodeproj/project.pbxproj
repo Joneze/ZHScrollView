@@ -15,6 +15,7 @@
 		F914B1AB1BBBB4590055386E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F914B1A91BBBB4590055386E /* LaunchScreen.storyboard */; };
 		F914B1B61BBBB4590055386E /* ZHScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F914B1B51BBBB4590055386E /* ZHScrollViewTests.m */; };
 		F914B1C11BBBB4590055386E /* ZHScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F914B1C01BBBB4590055386E /* ZHScrollViewUITests.m */; };
+		F9AC7C281BC74D5E00632981 /* ZHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AC7C271BC74D5E00632981 /* ZHImageView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		F914B1BC1BBBB4590055386E /* ZHScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F914B1C01BBBB4590055386E /* ZHScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHScrollViewUITests.m; sourceTree = "<group>"; };
 		F914B1C21BBBB4590055386E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9AC7C261BC74D5E00632981 /* ZHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHImageView.h; sourceTree = "<group>"; };
+		F9AC7C271BC74D5E00632981 /* ZHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 		F9AC7C251BC74B2600632981 /* ZHScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				F9AC7C261BC74D5E00632981 /* ZHImageView.h */,
+				F9AC7C271BC74D5E00632981 /* ZHImageView.m */,
 			);
 			path = ZHScrollView;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AC7C281BC74D5E00632981 /* ZHImageView.m in Sources */,
 				F914B1A31BBBB4590055386E /* ViewController.m in Sources */,
 				F914B1A01BBBB4590055386E /* AppDelegate.m in Sources */,
 				F914B19D1BBBB4590055386E /* main.m in Sources */,
