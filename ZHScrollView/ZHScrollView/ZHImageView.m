@@ -16,7 +16,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.userInteractionEnabled=YES;
+        self.userInteractionEnabled = YES;
     }
     return self;
 }

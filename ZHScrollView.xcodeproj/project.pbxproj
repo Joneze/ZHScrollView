@@ -16,6 +16,11 @@
 		F914B1B61BBBB4590055386E /* ZHScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F914B1B51BBBB4590055386E /* ZHScrollViewTests.m */; };
 		F914B1C11BBBB4590055386E /* ZHScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F914B1C01BBBB4590055386E /* ZHScrollViewUITests.m */; };
 		F9AC7C281BC74D5E00632981 /* ZHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AC7C271BC74D5E00632981 /* ZHImageView.m */; settings = {ASSET_TAGS = (); }; };
+		F9AC7C2B1BC74EEE00632981 /* ZHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AC7C2A1BC74EEE00632981 /* ZHScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		F9AC7C311BC758E300632981 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AC7C2D1BC758E300632981 /* 1.jpg */; settings = {ASSET_TAGS = (); }; };
+		F9AC7C321BC758E300632981 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AC7C2E1BC758E300632981 /* 2.jpg */; settings = {ASSET_TAGS = (); }; };
+		F9AC7C331BC758E300632981 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AC7C2F1BC758E300632981 /* 3.jpg */; settings = {ASSET_TAGS = (); }; };
+		F9AC7C341BC758E300632981 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AC7C301BC758E300632981 /* 4.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,13 @@
 		F914B1C21BBBB4590055386E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9AC7C261BC74D5E00632981 /* ZHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHImageView.h; sourceTree = "<group>"; };
 		F9AC7C271BC74D5E00632981 /* ZHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHImageView.m; sourceTree = "<group>"; };
+		F9AC7C291BC74EEE00632981 /* ZHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHScrollView.h; sourceTree = "<group>"; };
+		F9AC7C2A1BC74EEE00632981 /* ZHScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHScrollView.m; sourceTree = "<group>"; };
+		F9AC7C2D1BC758E300632981 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F9AC7C2E1BC758E300632981 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		F9AC7C2F1BC758E300632981 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		F9AC7C301BC758E300632981 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		F9AC7C351BC75DFD00632981 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,8 @@
 		F914B19B1BBBB4590055386E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F9AC7C351BC75DFD00632981 /* Reveal.framework */,
+				F9AC7C2C1BC758E300632981 /* image */,
 				F914B19C1BBBB4590055386E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -147,10 +161,23 @@
 		F9AC7C251BC74B2600632981 /* ZHScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				F9AC7C291BC74EEE00632981 /* ZHScrollView.h */,
+				F9AC7C2A1BC74EEE00632981 /* ZHScrollView.m */,
 				F9AC7C261BC74D5E00632981 /* ZHImageView.h */,
 				F9AC7C271BC74D5E00632981 /* ZHImageView.m */,
 			);
 			path = ZHScrollView;
+			sourceTree = "<group>";
+		};
+		F9AC7C2C1BC758E300632981 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC7C2D1BC758E300632981 /* 1.jpg */,
+				F9AC7C2E1BC758E300632981 /* 2.jpg */,
+				F9AC7C2F1BC758E300632981 /* 3.jpg */,
+				F9AC7C301BC758E300632981 /* 4.jpg */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F914B1AB1BBBB4590055386E /* LaunchScreen.storyboard in Resources */,
+				F9AC7C341BC758E300632981 /* 4.jpg in Resources */,
+				F9AC7C311BC758E300632981 /* 1.jpg in Resources */,
+				F9AC7C321BC758E300632981 /* 2.jpg in Resources */,
+				F9AC7C331BC758E300632981 /* 3.jpg in Resources */,
 				F914B1A81BBBB4590055386E /* Assets.xcassets in Resources */,
 				F914B1A61BBBB4590055386E /* Main.storyboard in Resources */,
 			);
@@ -286,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AC7C2B1BC74EEE00632981 /* ZHScrollView.m in Sources */,
 				F9AC7C281BC74D5E00632981 /* ZHImageView.m in Sources */,
 				F914B1A31BBBB4590055386E /* ViewController.m in Sources */,
 				F914B1A01BBBB4590055386E /* AppDelegate.m in Sources */,
@@ -430,8 +462,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZHScrollView",
+				);
 				INFOPLIST_FILE = ZHScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZHScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -441,8 +483,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZHScrollView",
+				);
 				INFOPLIST_FILE = ZHScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZHScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
