@@ -148,7 +148,7 @@
 {
     CGFloat pageWith = self.scrollView.frame.size.width;
     NSInteger currentPage = floor((self.scrollView.contentOffset.x - pageWith/ ([_slideImagesArray count]+2)) / pageWith) + 1;
-    
+    NSLog(@"当前页%ld",(long)currentPage);
     if (currentPage == 0) {
         if (self.ZHCurrentIndex) {
             self.ZHCurrentIndex(_slideImagesArray.count-1);

@@ -13,7 +13,7 @@ typedef void (^ZHScrollViewCurrentIndex)(NSInteger);
 
 @interface ZHScrollView : UIView <UIScrollViewDelegate>
 
-@property (nonatomic, copy  ) NSArray                  *slideImagesArray;                   // 存储图片的地址
+@property (nonatomic, copy  ) NSArray                   *slideImagesArray;                   // 存储图片的地址
 @property (nonatomic, copy  ) ZHScrollViewSelectBlock  ZHScrollViewImageSelectAction;       // 图片点击事件
 @property (nonatomic, copy  ) ZHScrollViewCurrentIndex ZHCurrentIndex;                      // 此时的幻灯片图片序号
 @property (nonatomic        ) BOOL                     withoutPageControl;                  // 是否显示pageControl
