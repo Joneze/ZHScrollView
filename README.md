@@ -20,8 +20,9 @@
 * 将项目文件夹中的ZHScrollView文件夹加入到项目中
 * 如果项目中用导航push到下级页面，然后使用了本组件会出现图片偏移，需加入此句代码
 
-    self.automaticallyAdjustsScrollViewInsets = NO;
-
+```objective-c
+self.automaticallyAdjustsScrollViewInsets = NO;
+```
 ###使用方法
 ```objective-c
 - (void)viewDidLoad {
