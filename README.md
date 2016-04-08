@@ -1,6 +1,7 @@
 # ZHScrollView
 ###banner for IOS
 
+![image](https://github.com/Joneze/ZHScrollView/blob/master/ZHScrollView/image/H5GIF.gif)
 
 ###图片轮播 Banner
 * 使用简单
