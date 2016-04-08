@@ -1,6 +1,10 @@
 # ZHScrollView
 ###banner for IOS
+效果图
+![效果图](https://github.com/Joneze/ZHScrollView/blob/master/ZHScrollView/image/H5GIF2.gif)
 
+
+在我自己的项目上的实际应用
 ![image](https://github.com/Joneze/ZHScrollView/blob/master/ZHScrollView/image/H5GIF.gif)
 
 ###图片轮播 Banner
