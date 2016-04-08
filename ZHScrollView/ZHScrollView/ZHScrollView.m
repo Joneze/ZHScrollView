@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIPageControl *pageControl;
+@property (nonatomic, strong) NSTimer *myTimer;
 
 @end
 
@@ -129,9 +130,9 @@
         if (!self.autoTime) {
             self.autoTime = [NSNumber numberWithFloat:2.0f];
         }
-        NSTimer *myTimer = [NSTimer timerWithTimeInterval:[self.autoTime floatValue] target:self selector:@selector(runTimePage)userInfo:nil repeats:YES];
+        _myTimer = [NSTimer timerWithTimeInterval:[self.autoTime floatValue] target:self selector:@selector(runTimePage)userInfo:nil repeats:YES];
         
-        [[NSRunLoop  currentRunLoop] addTimer:myTimer forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop  currentRunLoop] addTimer:_myTimer forMode:NSDefaultRunLoopMode];
     }
 }
 
@@ -200,5 +201,11 @@
         self.ZHScrollViewImageSelectAction(sender.tag);
     }
 }
+
+- (void)dealloc
+{
+    [_myTimer invalidate];
+}
+
 
 @end
