@@ -202,10 +202,9 @@
     }
 }
 
-- (void)dealloc
+-(void)timeStop
 {
     [_myTimer invalidate];
 }
-
 
 @end

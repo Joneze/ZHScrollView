@@ -21,9 +21,12 @@ typedef void (^ZHScrollViewCurrentIndex)(NSInteger);
 @property (nonatomic        ) NSNumber                 *autoTime;                           // 滚动时间
 @property (nonatomic, strong) UIColor                  *pageControlCurrentPageIndicatorTintColor;   //圆点的颜色
 @property (nonatomic, strong) UIColor                  *PageControlPageIndicatorTintColor;
+   
 
 - (void)startLoading;                           // 加载初始化（必须实现）
 // 或者
 - (void)startLoadingByIndex:(NSInteger)index;   // 加载初始化并制定初始图片
+
+-(void)timeStop; //如果页面需销毁必须实现此方法
 
 @end
