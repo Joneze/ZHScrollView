@@ -8,6 +8,7 @@
 
 #import "ZHScrollView.h"
 #import "ZHImageView.h"
+#import "UIImageView+WebCache.h"
 
 @interface ZHScrollView ()
 
@@ -101,7 +102,12 @@
     for (NSInteger i = 0; i < _slideImagesArray.count; i++) {
         ZHImageView *slideImage = [[ZHImageView alloc] init];
         slideImage.contentMode = UIViewContentModeScaleToFill;
-        slideImage.image = [UIImage imageNamed:_slideImagesArray[i]];
+        NSString *imageUrl = _slideImagesArray[i];
+        if ([imageUrl containsString:@"http"]) {
+            [slideImage sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"xxx.png"]];
+        }else{
+            slideImage.image = [UIImage imageNamed:imageUrl];
+        }
         slideImage.tag = i;
         slideImage.frame = CGRectMake(self.scrollView.frame.size.width * i + self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height);
         [slideImage addTarget:self action:@selector(ImageClick:)]; 
@@ -111,14 +117,27 @@
     // 取数组最后一张图片 放在第0页
     ZHImageView *firstSlideImage = [[ZHImageView alloc] init];
     firstSlideImage.contentMode = UIViewContentModeScaleToFill;
-    [firstSlideImage setImage:[UIImage imageNamed:_slideImagesArray[_slideImagesArray.count - 1]]];
+    
+    NSString *firstSlideImageUrl = _slideImagesArray[_slideImagesArray.count - 1];
+    if ([firstSlideImageUrl containsString:@"http"]) {
+        [firstSlideImage sd_setImageWithURL:[NSURL URLWithString:firstSlideImageUrl] placeholderImage:[UIImage imageNamed:@"xxx.png"]];
+    }else{
+        firstSlideImage.image = [UIImage imageNamed:firstSlideImageUrl];
+    }
+    
     firstSlideImage.frame = CGRectMake(0, 0, _scrollView.frame.size.width, _scrollView.frame.size.height);
     [self.scrollView addSubview:firstSlideImage];
     
     // 取数组的第一张图片 放在最后1页
     ZHImageView *endSlideImage = [[ZHImageView alloc] init];
     endSlideImage.contentMode = UIViewContentModeScaleToFill;
-    [endSlideImage setImage:[UIImage imageNamed:_slideImagesArray[0]]];
+    NSString *endSlideImageUrl = _slideImagesArray[0];
+    if ([endSlideImageUrl containsString:@"http"]) {
+        [endSlideImage sd_setImageWithURL:[NSURL URLWithString:endSlideImageUrl] placeholderImage:[UIImage imageNamed:@"sss.png"]];
+    }else{
+        endSlideImage.image = [UIImage imageNamed:endSlideImageUrl];
+    }
+    
     endSlideImage.frame = CGRectMake((_slideImagesArray.count + 1) * _scrollView.frame.size.width, 0, _scrollView.frame.size.width, _scrollView.frame.size.height);
     [self.scrollView addSubview:endSlideImage];
     
