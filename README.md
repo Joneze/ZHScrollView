@@ -29,7 +29,7 @@ self.automaticallyAdjustsScrollViewInsets = NO;
     [super viewDidLoad];
     
     ZHScrollView *testView = [[ZHScrollView alloc] initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, 200)];
-    NSArray *imageArray = @[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg"];
+    NSArray *imageArray = @[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg"]; //图片可以是网络图片地址数组,内部已经做了兼容处理
     testView.slideImagesArray = imageArray;
     testView.ianEcrollViewSelectAction = ^(NSInteger i)
     {
@@ -52,3 +52,5 @@ self.automaticallyAdjustsScrollViewInsets = NO;
 ##期望
 如果在使用过程中遇到BUG，希望你能联系我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
 如果在使用过程中发现功能不够用，希望你能联系我，我非常想为这个控件增加更多好用的功能，谢谢
+
+
