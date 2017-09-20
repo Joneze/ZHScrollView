@@ -9,12 +9,12 @@
 
 ![image](https://github.com/Joneze/ZHScrollView/blob/master/ZHScrollView/image/H5GIF.gif)
 
-###图片轮播 Banner
+### 图片轮播 Banner
 * 使用简单
 * 实现了定时轮播功能，可自定义各项功能
 * 实现了点击效果
 
-###如何使用ZHScrollView
+### 如何使用ZHScrollView
 
 * 手动导入
 * 将项目文件夹中的ZHScrollView文件夹加入到项目中
@@ -23,7 +23,7 @@
 ```objective-c
 self.automaticallyAdjustsScrollViewInsets = NO;
 ```
-###使用方法
+### 使用方法
 ```objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,10 +46,10 @@ self.automaticallyAdjustsScrollViewInsets = NO;
 ```
 具体使用参考demo
 
-##提醒
+## 提醒
 工程的创建使用了Xcode7版本
 
-##期望
+## 期望
 如果在使用过程中遇到BUG，希望你能联系我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
 如果在使用过程中发现功能不够用，希望你能联系我，我非常想为这个控件增加更多好用的功能，谢谢
 
