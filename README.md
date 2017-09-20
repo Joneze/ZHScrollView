@@ -1,5 +1,5 @@
 # ZHScrollView
-###banner for IOS
+### banner for IOS
 效果图
 
 ![效果图](https://github.com/Joneze/ZHScrollView/blob/master/ZHScrollView/image/H5GIF2.gif)
